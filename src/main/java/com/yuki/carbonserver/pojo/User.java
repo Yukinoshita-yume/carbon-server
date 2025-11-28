@@ -9,5 +9,5 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class User {
     private Integer userId;
-    private Integer userLevel;
+    private Integer userLevel = 0;
 }

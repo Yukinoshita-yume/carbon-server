@@ -6,15 +6,11 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
-import java.time.LocalDateTime;
-
 @EqualsAndHashCode(callSuper = true)
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class UserDTO extends User {
-    private String userName;
+public class LoginUserDTO extends User {
     private String userTelephone;
-    private LocalDateTime userRegistrationTime; //创建时间
-    private LocalDateTime userUpdateTime; //更新时间
+    private String userPassword;
 }
